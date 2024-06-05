@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time by Country</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="countryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Country
+                </a>
+                <div class="dropdown-menu" aria-labelledby="countryDropdown">
+                  <a class="dropdown-item" href="#" data-timezone="America/New_York" data-country="United States (New York)">United States (New York)</a>
+                  <a class="dropdown-item" href="#" data-timezone="Europe/London" data-country="United Kingdom (London)">United Kingdom (London)</a>
+                  <a class="dropdown-item" href="#" data-timezone="Asia/Tokyo" data-country="Japan (Tokyo)">Japan (Tokyo)</a>
+                  <a class="dropdown-item" href="#" data-timezone="Australia/Sydney" data-country="Australia (Sydney)">Australia (Sydney)</a>
+                  <a class="dropdown-item" href="#" data-timezone="Asia/Karachi" data-country="Pakistan (Karachi)">Pakistan (Karachi)</a>
+                  <a class="dropdown-item" href="#" data-timezone="Asia/Kolkata" data-country="India (Kolkata)">India (Kolkata)</a>
+                </div>
+              </li>
+          </ul>
+          
+        </div>
+      </nav>
+      
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="display-4">Current Time Is <h1 id="time"></h1></h1>
+                    <p class="lead"></p>
+                    <hr class="my-4">
+                    <p>Time.is is an online timekeeping and time synchronization service. Through this website, you can access the current time, perform time zone conversions, and synchronize your time accurately using worldwide atomic clocks.</p>
+                    <a class="btn btn-primary btn-lg" id="learnMoreButton" href="#" role="button">Pakistan (Karachi)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Project</p>
+    </footer>
+
+    <!-- Include moment.js and moment-timezone.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+    <script src="script.js"></script>
+</body>
+</html>
